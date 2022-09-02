@@ -1,0 +1,41 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function skipLine() {
+
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function show(phrase) {
+
+		document.write(phrase);
+		skipLine();
+	}
+
+	var number = Math.round(Math.random() * 10) ;
+
+	var tries = 1;
+
+	while(tries <= 3) {
+
+		var guess = parseInt(prompt("Type in your guess!"));
+
+		if(guess == number) {
+
+			show("You got it right!! THe correct number was " + number);
+			break;
+
+		} else {
+
+			show("You got it wrong!");
+		}
+
+		tries++;
+	}
+
+	show("END");
+
+
+</script>

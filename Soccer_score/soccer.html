@@ -1,0 +1,42 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function skipLine() {
+
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function show(phrase) {
+
+		document.write(phrase);
+		skipLine();
+	}
+
+	var victories = parseInt(prompt("Type in the number of victories"));
+
+	var ties = parseInt(prompt("Type in the number of ties"));
+
+	var points = (victories * 3) + ties;
+
+	show("Your team scored" + points + " points!");
+
+	if(points > 28) {
+
+		show("Your team is better than last year");
+	}
+
+	if(points < 28) {
+
+		show("Your team is worse than last year");
+	}
+
+	if(points == 28) {
+
+		show("Your team is the same as last year")
+	}
+
+	show("END");
+
+</script>

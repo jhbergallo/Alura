@@ -1,0 +1,35 @@
+<meta charset="UTF-8">
+
+<script>
+
+	function skipLine() {
+
+		document.write("<br>");
+		document.write("<br>");
+	}
+
+	function show(phrase) {
+
+		document.write(phrase);
+		skipLine();
+	}
+
+	var totalRelatives = parseInt(prompt("What is the amount of relatives?"));
+
+	var number = 1;
+
+	var totalAges = 0;
+
+	while(number <= totalRelatives) {
+
+		var age = parseInt(prompt("Type in the relative's name"));
+		totalAges = totalAges + age;
+		number++;
+	}
+
+	var averageAges = totalAges/totalRelatives;
+	show("The age average of your relatives is " + averageAges);
+	show("END");
+
+
+</script>
